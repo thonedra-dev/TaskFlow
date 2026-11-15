@@ -1,315 +1,137 @@
-<!-- ═══════════════════════════════════════════════════════════════════════
-     TaskFlow · README
-     Animated assets live in /.github/assets — the rest is plain GitHub Markdown.
-     ═══════════════════════════════════════════════════════════════════════ -->
+<picture>
+  <source media="(max-width: 640px)" srcset="static/svg_pics/hero-mobile.svg" />
+  <img src="static/svg_pics/hero.svg" alt="TaskFlow — Your work. Your team. One flow. A workspace for tasks, meetings and projects." width="100%" />
+</picture>
 
-<div align="center">
+<p align="center">
+  <a href="#experience">Experience</a> ·
+  <a href="#capabilities">Capabilities</a> ·
+  <a href="#run-locally">Run locally</a>
+</p>
 
-<img src="static/svg_pics/hero.svg" alt="TaskFlow — Tasks, Meetings, Projects. One platform." width="100%" />
+TaskFlow brings **tasks, meetings and projects** into one expressive workspace. Plan your day, break work into steps and bring teammates into your projects through connection codes and invitations.
 
-<br/>
+## Experience
 
-<a href="https://github.com/thonedra-dev">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3200&pause=900&color=A78BFA&center=true&vCenter=true&width=640&lines=Tasks+that+actually+get+done.;Meetings+with+maps%2C+agendas+%26+people.;Projects+shared+with+a+single+invite+code.;Glassmorphism+%2B+3D+%E2%9C%A8+in+dark+%26+light." alt="Typing animation: Tasks that actually get done. Meetings with maps, agendas and people. Projects shared with a single invite code. Glassmorphism plus 3D in dark and light." />
-</a>
+### 01 / A welcoming way in
 
-<br/><br/>
+Username/password and Google sign-in flows, email OTP verification and a playful 3D welcome.
 
-![React](https://img.shields.io/badge/React_19-0b0820?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-0b0820?style=for-the-badge&logo=vite&logoColor=A78BFA)
-![Flask](https://img.shields.io/badge/Flask-0b0820?style=for-the-badge&logo=flask&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-0b0820?style=for-the-badge&logo=mysql&logoColor=4FC3F7)
-![Three.js](https://img.shields.io/badge/Three.js-0b0820?style=for-the-badge&logo=threedotjs&logoColor=white)
-![License](https://img.shields.io/badge/MIT-0b0820?style=for-the-badge&logo=opensourceinitiative&logoColor=3DA639)
+<table><tr><td>
+  <img src="static/svg_pics/showcase-auth.svg" alt="" width="100%" /><br/>
+  <a href="static/project_reference_images/auth_darkmode.png"><img src="static/project_reference_images/auth_darkmode.png" alt="TaskFlow dark-mode sign-in screen with username and password fields, a Google sign-in button and a 3D character" width="100%" /></a>
+</td></tr></table>
 
-<br/>
+### 02 / Give your day some clarity
 
-**[✦ Overview](#-overview)** &nbsp;·&nbsp;
-**[✦ Gallery](#-gallery)** &nbsp;·&nbsp;
-**[✦ Features](#-features)** &nbsp;·&nbsp;
-**[✦ Architecture](#-architecture)** &nbsp;·&nbsp;
-**[✦ Stack](#-tech-stack)** &nbsp;·&nbsp;
-**[✦ Roadmap](#-roadmap)**
+Pending, due today, completed and overdue counts put the next step in view.
 
-</div>
+<table><tr><td>
+  <img src="static/svg_pics/showcase-overview.svg" alt="" width="100%" /><br/>
+  <a href="static/project_reference_images/dashboard_one.png"><img src="static/project_reference_images/dashboard_one.png" alt="TaskFlow light-mode dashboard showing task summary cards, the new-task form and a progress panel" width="100%" /></a>
+</td></tr></table>
 
-<img src="static/svg_pics/divider.svg" width="100%" alt="" />
+### 03 / Watch the work add up
 
-## ✦ Overview
+Search and filter your tasks, check off a step and follow completion by category.
 
-> *"Three apps for one workday is two too many."*
+<table><tr><td>
+  <img src="static/svg_pics/showcase-progress.svg" alt="" width="100%" /><br/>
+  <a href="static/project_reference_images/dashboard_two.png"><img src="static/project_reference_images/dashboard_two.png" alt="TaskFlow light-mode task list with search, date filters, priority labels, completion progress and category totals" width="100%" /></a>
+</td></tr></table>
 
-**TaskFlow** began in early 2025 as a humble to-do list inspired by tools like **ClickUp**, and grew into a single, cohesive workspace where **tasks**, **meetings**, and **multi-person projects** live side by side.
+<sub>Original application captures. Select any screenshot to inspect it at full resolution.</sub>
 
-It isn't a CRUD demo wearing a costume. TaskFlow ships with its own design language, built to feel like a real product from the first screen:
+## Capabilities
 
-<table>
-<tr>
-<td width="33%" valign="top">
+| Plan with purpose | Keep the context |
+| :--- | :--- |
+| **Tasks & steps** — priorities, categories, due dates and completion. | **Meetings & maps** — agendas, online links and mapped venues. |
+| **Calendar** — monthly tasks and meetings with detail panels. | **Project invitations** — find teammates by code; accept or decline invites. |
+| **Visible progress** — completion rings and category totals. | **Personal touches** — theme switching, interactive 3D and a notification inbox. |
 
-### 🪟 Glass
-A **glassmorphism UI** with frosted panels, soft depth and luminous gradients.
+## Built with
 
-</td>
-<td width="33%" valign="top">
+| Layer | Technology |
+| :--- | :--- |
+| **Interface** | React 19 · Vite 8 · React Router 7 |
+| **API** | Python · Flask · Flask-CORS · Werkzeug |
+| **Data** | MySQL · MySQL Connector/Python |
+| **Interaction** | Three.js · React Three Fiber · Drei · React Leaflet |
+| **Identity & email** | Google Identity Services · Flask sessions · Gmail SMTP |
 
-### 🌗 Dual-theme
-Full **dark / light parity** on every screen, not just the landing page.
-
-</td>
-<td width="33%" valign="top">
-
-### 🧊 Playful 3D
-Draggable **2.5D / 3D characters** powered by Three.js and react-three-fiber.
-
-</td>
-</tr>
-</table>
-
-<img src=".github/assets/divider.svg" width="100%" alt="" />
-
-## ✦ Gallery
-
-> Every screen below is real, shipped UI — click a section to expand it.
-
-<details open>
-<summary><b>🔐 &nbsp;Authentication &nbsp;·&nbsp; Google OAuth 2.0, email &amp; password, 6-digit OTP</b></summary>
-
-<br/>
-
-<div align="center">
-<img src="static/project_reference_images/auth_darkmode.png" width="48%" alt="Sign in — dark mode" />
-<img src="static/project_reference_images/auth_lightmode.png" width="48%" alt="Sign in — light mode" />
-<br/><sub><b>Sign in</b> — identical experience in dark <i>and</i> light</sub>
-<br/><br/>
-<img src="static/project_reference_images/otp.png" width="60%" alt="Email OTP verification" />
-<br/><sub><b>Email verification</b> — a clean, step-based 6-digit OTP flow</sub>
-</div>
-
-</details>
-
-<details open>
-<summary><b>📊 &nbsp;Dashboard &nbsp;·&nbsp; stats, live task creation, progress ring</b></summary>
-
-<br/>
-
-<div align="center">
-<img src="static/project_reference_images/dashboard_one.png" width="90%" alt="Dashboard — dark theme" />
-<br/><sub><b>Dark</b></sub>
-<br/><br/>
-<img src="static/project_reference_images/dashboard_two.png" width="90%" alt="Dashboard — light theme" />
-<br/><sub><b>Light</b></sub>
-</div>
-
-<br/>
-
-At-a-glance counters for **pending · due today · completed · overdue**, a live task-creation form, and a **progress ring that updates in real time**.
-
-</details>
-
-<details>
-<summary><b>🗓️ &nbsp;Calendar &nbsp;·&nbsp; tasks, project work &amp; meetings in one view</b></summary>
-
-<br/>
-
-<div align="center">
-<img src="static/project_reference_images/calendar.png" width="90%" alt="Calendar view" />
-<br/><sub><b>Monthly view</b> with an illustrated character guide &amp; legend</sub>
-<br/><br/>
-<img src="static/project_reference_images/calendar_task.png" width="48%" alt="Calendar — task detail" />
-<img src="static/project_reference_images/calendar_meeting.png" width="48%" alt="Calendar — meeting detail" />
-<br/><sub><b>Task detail</b> &nbsp;·&nbsp; <b>Meeting detail</b> — steps, agenda &amp; location, without leaving the calendar</sub>
-<br/><br/>
-<img src="static/project_reference_images/calendar_metadata.png" width="70%" alt="Calendar metadata panel" />
-<br/><sub><b>Metadata panel</b></sub>
-</div>
-
-</details>
-
-<details>
-<summary><b>📁 &nbsp;Projects &nbsp;·&nbsp; a guided two-step creation flow</b></summary>
-
-<br/>
-
-<div align="center">
-<img src="static/project_reference_images/project_creation_one.png" width="48%" alt="Create project — step 1" />
-<img src="static/project_reference_images/project_creation_two.png" width="48%" alt="Create project — step 2" />
-<br/><sub><b>Step 1</b> — name, description, cover &nbsp;·&nbsp; <b>Step 2</b> — invite your team</sub>
-</div>
-
-</details>
-
-<details>
-<summary><b>🔔 &nbsp;Notifications &nbsp;·&nbsp; a proper inbox, not an afterthought</b></summary>
-
-<br/>
-
-<div align="center">
-<img src="static/project_reference_images/notification.png" width="60%" alt="Notifications panel" />
-<br/><sub>Unread counts · mark-as-read · mark-all-read — from the bell in the top nav</sub>
-</div>
-
-</details>
-
-<img src=".github/assets/divider.svg" width="100%" alt="" />
-
-## ✦ Features
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-#### 🔐 Secure Authentication
-Google OAuth 2.0, email OTP verification, and a guided multi-step profile setup.
-
-#### ✅ Task Management
-Create, update and complete tasks with **steps, priorities, categories and due dates**.
-
-#### 🤝 Meeting Management
-Schedule meetings with **locations, participants and agendas**, plus map-based venues.
-
-#### 📁 Project Collaboration
-Spin up projects and invite collaborators with **invitation codes**.
-
-</td>
-<td width="50%" valign="top">
-
-#### 🔔 Notification System
-Automated in-app reminders for upcoming and overdue items.
-
-#### 📧 Email Notifications
-Optional automated email delivery for key updates.
-
-#### 🗺️ Map Integration
-Embedded **Leaflet** maps for geocoded meeting locations.
-
-#### 🎨 Theming &nbsp;+&nbsp; 🧊 3D / 2.5D Visuals
-Full dark/light mode on every screen, and interactive, draggable animated elements built with **Three.js** &amp; **react-three-fiber**.
-
-</td>
-</tr>
-</table>
-
-<img src=".github/assets/divider.svg" width="100%" alt="" />
-
-## ✦ Architecture
+### One workspace, three layers
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{
-  'primaryColor':'#1b1245','primaryTextColor':'#e0e7ff','primaryBorderColor':'#a78bfa',
-  'lineColor':'#7dd3fc','secondaryColor':'#0a2a4a','tertiaryColor':'#0b0820',
-  'fontFamily':'ui-sans-serif, system-ui'}}}%%
+%%{init: {"flowchart": {"rankSpacing": 24, "padding": 12}, "themeVariables": {"fontSize": "20px"}}}%%
 flowchart LR
-  subgraph FE["⚛️  React (Vite) SPA"]
-    direction TB
-    R["React Router"]
-    H["12+ Custom Hooks<br/><sub>useDashboardData · useCalendarTasks · useNotifications</sub>"]
-    UI["Glass UI · Three.js · Leaflet"]
-    R --> H --> UI
-  end
-
-  subgraph BE["🐍  Flask Backend"]
-    direction TB
-    BP["Blueprints<br/><sub>auth · tasks · meetings · projects · notifications</sub>"]
-    SA["Session Auth<br/><sub>Google OAuth 2.0 · Email OTP</sub>"]
-    BP --- SA
-  end
-
-  DB[("🗄️  MySQL")]
-
-  FE == "JSON / REST · 20+ endpoints" ==> BE
-  BE == "queries" ==> DB
-  BE -. "responses" .-> FE
-
-  classDef box fill:#1b1245,stroke:#a78bfa,color:#e0e7ff,stroke-width:1.5px;
-  class R,H,UI,BP,SA,DB box;
+  UI["React"] <-->|"/api"| API["Flask"]
+  API <-->|"SQL"| DB[(MySQL)]
+  classDef layer fill:#1a223d,stroke:#8576cc,color:#eef0ff
+  class UI,API,DB layer
 ```
 
-<table>
-<tr>
-<td width="33%" valign="top">
+[React hooks](src/hooks) use a [shared fetch helper](src/api.js) with session cookies. [Flask routes](backend.py) cover tasks, meetings and notifications; the [user blueprint](user.py) covers accounts, profiles and project invitations. [db.py](db.py) centralizes MySQL connections. During development, [Vite](vite.config.js) forwards `/api` and `/static` to Flask.
 
-**⚛️ Frontend**
+## Run locally
 
-A Vite-powered SPA with client-side routing. A library of **12+ custom hooks** decouples data-fetching, derived state and UI logic.
+**Prerequisites:** Node.js 22.12+, Python 3 and MySQL.
 
-</td>
-<td width="33%" valign="top">
+**Database required:** This repository does not include schema SQL or a database bootstrap script. Obtain a compatible `todolist` schema from the maintainer before running the full application.
 
-**🐍 Backend**
+<details>
+<summary><strong>Configure and start your workspace</strong></summary>
 
-Flask organized into **blueprints**, exposing **20+ REST endpoints** across auth, tasks, meetings, projects and notifications.
+**1. Install the dependencies**
 
-</td>
-<td width="33%" valign="top">
-
-**🗄️ Data &amp; Auth**
-
-MySQL with a centralized connection/config module. **Session-based** auth with Google OAuth 2.0 and email OTP as alternate flows.
-
-</td>
-</tr>
-</table>
-
-<img src=".github/assets/divider.svg" width="100%" alt="" />
-
-## ✦ Tech Stack
-
-<div align="center">
-
-| Layer | Tools |
-|:---:|:---|
-| **Frontend** | ![React](https://img.shields.io/badge/React-1b1245?style=flat-square&logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-1b1245?style=flat-square&logo=vite&logoColor=A78BFA) ![React Router](https://img.shields.io/badge/React_Router-1b1245?style=flat-square&logo=reactrouter&logoColor=F44250) ![Three.js](https://img.shields.io/badge/Three.js-1b1245?style=flat-square&logo=threedotjs&logoColor=white) ![react-three-fiber](https://img.shields.io/badge/react--three--fiber-1b1245?style=flat-square&logo=react&logoColor=F0ABFC) ![Leaflet](https://img.shields.io/badge/Leaflet-1b1245?style=flat-square&logo=leaflet&logoColor=7DD3FC) |
-| **Backend** | ![Flask](https://img.shields.io/badge/Flask-1b1245?style=flat-square&logo=flask&logoColor=white) ![Python](https://img.shields.io/badge/Python-1b1245?style=flat-square&logo=python&logoColor=FFD43B) ![Werkzeug](https://img.shields.io/badge/Werkzeug-1b1245?style=flat-square&logo=pallets&logoColor=white) |
-| **Database** | ![MySQL](https://img.shields.io/badge/MySQL-1b1245?style=flat-square&logo=mysql&logoColor=4FC3F7) |
-| **Auth** | ![Google](https://img.shields.io/badge/Google_OAuth_2.0-1b1245?style=flat-square&logo=google&logoColor=white) ![Sessions](https://img.shields.io/badge/Session_Auth-1b1245?style=flat-square&logo=springsecurity&logoColor=6DB33F) ![OTP](https://img.shields.io/badge/Email_OTP-1b1245?style=flat-square&logo=gmail&logoColor=EA4335) |
-
-</div>
-
-<img src=".github/assets/divider.svg" width="100%" alt="" />
-
-## ✦ Roadmap
-
-TaskFlow is an evolving MVP. What's next:
-
-```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#1b1245','primaryTextColor':'#e0e7ff','primaryBorderColor':'#a78bfa','lineColor':'#7dd3fc','fontFamily':'ui-sans-serif, system-ui'}}}%%
-mindmap
-  root((TaskFlow<br/>next))
-    Collaboration
-      📝 Collaborative document editor
-      📎 File sharing in Meetings
-    Intelligence
-      🤖 AI-assisted productivity suggestions
-    Reach
-      📱 Push notifications to devices
+```sh
+git clone https://github.com/thonedra-dev/TaskFlow.git
+cd TaskFlow
+npm ci
+python -m venv .venv
 ```
 
-- [ ] 📝 **Collaborative document editor** for multi-person project work
-- [ ] 📎 **File sharing** within the Meeting module
-- [ ] 🤖 **Personalized AI-assisted** productivity suggestions
-- [ ] 📱 **Push notifications** to user devices
+Activate the Python environment with `.\.venv\Scripts\Activate.ps1` in PowerShell, or `source .venv/bin/activate` on macOS/Linux, then install the backend dependencies:
 
-<img src=".github/assets/divider.svg" width="100%" alt="" />
+```sh
+python -m pip install Flask Flask-Cors mysql-connector-python requests
+```
 
-## ✦ License
+**2. Connect the database and services**
 
-Released under the **MIT License** — build on it, remix it, make it yours.
+- Import the compatible schema into MySQL and update `DB_CONFIG` in [db.py](db.py). The current defaults use database `todolist` and port **4306**; set the host, port and credentials for your instance.
+- Create `client_secret.json` in the repository root with the structure below. [user.py](user.py) reads it at startup. The file is ignored by Git; Gmail credentials are needed for OTP and account email delivery.
 
-<br/>
+```json
+{
+  "app": {
+    "sender_email": "you@gmail.com",
+    "sender_password": "YOUR_GMAIL_APP_PASSWORD",
+    "upload_folder": "static/uploads/profile_pics"
+  }
+}
+```
 
-<div align="center">
+- For Google sign-in, replace `GOOGLE_CLIENT_ID` in [useGoogleAuth.js](src/hooks/useGoogleAuth.js) with your Google web client ID and configure `http://localhost:5173` as an authorized JavaScript origin.
 
-<sub>
+**3. Start both servers from the repository root**
 
-**Crafted with ❤️ and a lot of ☕ by [thonedra-dev](https://github.com/thonedra-dev)**
+```sh
+# Terminal 1 — Python environment activated
+python backend.py
 
-*If TaskFlow inspires you, a ⭐ goes a long way.*
+# Terminal 2
+npm run dev
+```
 
-</sub>
+Open **http://localhost:5173/auth**. Flask listens on **http://localhost:5000**. `npm run build` builds the frontend; Flask does not currently serve that build.
 
-<br/><br/>
+On case-sensitive filesystems, match the `WelcomePopup` import in [LoginRegister.jsx](src/Pages/LoginRegister.jsx) to the existing filename, `Welcomepopup.jsx`.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:38bdf8,50:c084fc,100:f472b6&height=110&section=footer" width="100%" alt="" />
+This is a development project: Flask uses debug mode and a placeholder session secret, and the Google flow still needs server-side credential verification before deployment.
 
-</div>
+</details>
+
+---
+
+<p align="center"><sub>TaskFlow · Designed and built by <a href="https://github.com/thonedra-dev">thonedra-dev</a></sub></p>

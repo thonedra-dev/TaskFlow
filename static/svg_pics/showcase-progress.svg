@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="56" viewBox="0 0 1200 56" role="presentation">
+  <rect width="1200" height="56" rx="8" fill="#171e35"/>
+  <path d="M0 55h1200" stroke="#8bd7cb" stroke-opacity=".45"/>
+  <g fill="#7b86a7"><circle cx="25" cy="28" r="5"/><circle cx="45" cy="28" r="5"/><circle cx="65" cy="28" r="5"/></g>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18">
+    <text x="96" y="35" fill="#c5cde1">taskflow / dashboard</text>
+    <text x="1172" y="35" text-anchor="end" fill="#9de5d8" font-weight="600" letter-spacing="1">03 / TASKS &amp; PROGRESS</text>
+  </g>
+</svg>
