@@ -6,7 +6,7 @@
 <p align="center">
   <a href="#experience">Explore the interface</a> ·
   <a href="#capabilities">See what it does</a> ·
-  <a href="src/App.jsx">Explore the source</a>
+  <a href="#built-with">Under the hood</a>
 </p>
 
 TaskFlow brings **tasks, meetings and project invitations** into one expressive workspace. Plan your day, break work into steps and see your progress through a React interface backed by Flask and MySQL.
@@ -49,6 +49,26 @@ Search and filter your tasks, check off a step and follow completion by category
 | **Tasks & steps** — priorities, categories, due dates and completion tracking. | **Meetings & maps** — agendas, online links and geocoded venues with Leaflet. |
 | **Calendar** — monthly task and meeting views with detail panels. | **Project invitations** — create projects, find teammates by connection code and accept or decline invites. |
 | **Progress at a glance** — task counts, completion rings and category breakdowns. | **Personal touches** — theme switching, interactive 3D and an in-app notification inbox. |
+
+## Built with
+
+| Layer | Technology |
+| :--- | :--- |
+| **Interface** | React 19 · Vite 8 · React Router 7 |
+| **API** | Python · Flask · Flask-CORS · Werkzeug |
+| **Data** | MySQL · MySQL Connector/Python |
+| **Interaction** | Three.js · React Three Fiber · Drei · React Leaflet |
+| **Identity & email** | Google Identity Services · Flask sessions · Gmail SMTP |
+
+### One workspace, three layers
+
+```mermaid
+flowchart LR
+  UI["React + Vite"] <-->|"/api · JSON / FormData"| API["Flask + session cookies"]
+  API <-->|"SQL"| DB[(MySQL)]
+```
+
+[React hooks](src/hooks) manage fetching and derived dashboard state through a [shared API helper](src/api.js). [Flask routes](backend.py) handle tasks, meetings and notifications; the [user blueprint](user.py) handles accounts, profiles and project invitations. [One connection module](db.py) supplies MySQL access. During development, [Vite](vite.config.js) proxies `/api` and `/static` to Flask.
 
 ---
 
