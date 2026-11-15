@@ -17,19 +17,30 @@ TaskFlow brings **tasks, meetings and project invitations** into one expressive 
 
 Username and password, Google sign-in flows and email OTP verification, with a playful 3D introduction.
 
-<img src="static/project_reference_images/auth_darkmode.png" alt="TaskFlow dark-mode sign-in screen with username and password fields, a Google sign-in button and a 3D character" width="100%" />
+<table><tr><td>
+  <img src="static/svg_pics/showcase-auth.svg" alt="" width="100%" /><br/>
+  <a href="static/project_reference_images/auth_darkmode.png"><img src="static/project_reference_images/auth_darkmode.png" alt="TaskFlow dark-mode sign-in screen with username and password fields, a Google sign-in button and a 3D character" width="100%" /></a>
+</td></tr></table>
 
 ### 02 / Give your day some clarity
 
 Pending, due today, completed and overdue counts put the next step in view.
 
-<img src="static/project_reference_images/dashboard_one.png" alt="TaskFlow light-mode dashboard showing task summary cards, the new-task form and a progress panel" width="100%" />
+<table><tr><td>
+  <img src="static/svg_pics/showcase-overview.svg" alt="" width="100%" /><br/>
+  <a href="static/project_reference_images/dashboard_one.png"><img src="static/project_reference_images/dashboard_one.png" alt="TaskFlow light-mode dashboard showing task summary cards, the new-task form and a progress panel" width="100%" /></a>
+</td></tr></table>
 
 ### 03 / Watch the work add up
 
 Search and filter your tasks, check off a step and follow completion by category.
 
-<img src="static/project_reference_images/dashboard_two.png" alt="TaskFlow light-mode task list with search, date filters, priority labels, completion progress and category totals" width="100%" />
+<table><tr><td>
+  <img src="static/svg_pics/showcase-progress.svg" alt="" width="100%" /><br/>
+  <a href="static/project_reference_images/dashboard_two.png"><img src="static/project_reference_images/dashboard_two.png" alt="TaskFlow light-mode task list with search, date filters, priority labels, completion progress and category totals" width="100%" /></a>
+</td></tr></table>
+
+<sub>Original application captures. Select any screenshot to inspect it at full resolution.</sub>
 
 ## Capabilities
 
