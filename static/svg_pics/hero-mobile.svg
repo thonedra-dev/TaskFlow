@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="560" viewBox="0 0 640 560" role="img" aria-labelledby="title desc">
+  <title id="title">TaskFlow — Your work. Your team. One flow.</title>
+  <desc id="desc">A compact navy banner with an illustrative task, calendar and project checklist.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#10172f"/><stop offset="1" stop-color="#201b42"/></linearGradient>
+    <linearGradient id="accent" x2="1" y2="1"><stop stop-color="#818cf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+  </defs>
+  <rect x="1" y="1" width="638" height="558" rx="24" fill="url(#background)" stroke="#3b4564"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="40" y="40" width="34" height="34" rx="10" fill="url(#accent)"/>
+    <rect x="49" y="49" width="16" height="16" rx="4" stroke="#fff" stroke-width="1.6" fill="none"/>
+    <path d="m53 57 3 3 6-7" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="91" y="63" fill="#b8c2de" font-size="16" font-weight="600" letter-spacing="1.6">TASKS. MEETINGS. PROJECTS.</text>
+    <text x="35" y="169" fill="#f6f7ff" font-size="88" font-weight="750" letter-spacing="-4">Task<tspan fill="#a99aff">Flow</tspan></text>
+    <text x="40" y="227" fill="#eef0ff" font-size="34" font-weight="500" letter-spacing="-.8">Your work. Your team.</text>
+    <text x="40" y="273" fill="#9de5df" font-size="34" font-weight="500" letter-spacing="-.8">One flow.</text>
+    <rect x="40" y="316" width="560" height="204" rx="20" fill="#1a223d" stroke="#3b4564"/>
+    <path d="M91 354v128" stroke="#47466e" stroke-width="2"/>
+    <circle cx="91" cy="355" r="18" fill="#34305b"/>
+    <path d="m83 355 5 5 10-11" stroke="#b7a8ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="128" y="363" fill="#eef0ff" font-size="23" font-weight="600">Break it into steps</text>
+    <circle cx="91" cy="418" r="18" fill="#1e3b50"/>
+    <rect x="83" y="411" width="16" height="15" rx="3" stroke="#8bd5f5" stroke-width="1.8" fill="none"/>
+    <path d="M87 408v6m8-6v6m-12 3h16" stroke="#8bd5f5" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="128" y="426" fill="#eef0ff" font-size="23" font-weight="600">Make time to meet</text>
+    <circle cx="91" cy="481" r="18" fill="#1d3b40"/>
+    <circle cx="91" cy="476" r="4" stroke="#8cddd1" stroke-width="1.8" fill="none"/>
+    <path d="M84 489v-2a7 7 0 0 1 14 0v2" stroke="#8cddd1" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+    <text x="128" y="489" fill="#eef0ff" font-size="23" font-weight="600">Bring your people</text>
+  </g>
+</svg>

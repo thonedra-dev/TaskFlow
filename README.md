@@ -1,8 +1,7 @@
-<p align="center">
-  <img src="static/svg_pics/hero.svg" alt="TaskFlow — tasks, meetings and projects in one workspace" width="100%" />
-</p>
-
-<p align="center"><strong>Your work. Your team. One flow.</strong></p>
+<picture>
+  <source media="(max-width: 640px)" srcset="static/svg_pics/hero-mobile.svg" />
+  <img src="static/svg_pics/hero.svg" alt="TaskFlow — Your work. Your team. One flow. A workspace for tasks, meetings and projects." width="100%" />
+</picture>
 
 <p align="center">
   <a href="#experience">Explore the interface</a> ·
