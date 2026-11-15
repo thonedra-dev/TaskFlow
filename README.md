@@ -4,18 +4,18 @@
 </picture>
 
 <p align="center">
-  <a href="#experience">Explore the interface</a> ·
-  <a href="#capabilities">See what it does</a> ·
-  <a href="#built-with">Under the hood</a>
+  <a href="#experience">Experience</a> ·
+  <a href="#capabilities">Capabilities</a> ·
+  <a href="#run-locally">Run locally</a>
 </p>
 
-TaskFlow brings **tasks, meetings and project invitations** into one expressive workspace. Plan your day, break work into steps and see your progress through a React interface backed by Flask and MySQL.
+TaskFlow brings **tasks, meetings and projects** into one expressive workspace. Plan your day, break work into steps and bring teammates into your projects through connection codes and invitations.
 
 ## Experience
 
 ### 01 / A welcoming way in
 
-Username and password, Google sign-in flows and email OTP verification, with a playful 3D introduction.
+Username/password and Google sign-in flows, email OTP verification and a playful 3D welcome.
 
 <table><tr><td>
   <img src="static/svg_pics/showcase-auth.svg" alt="" width="100%" /><br/>
@@ -46,9 +46,9 @@ Search and filter your tasks, check off a step and follow completion by category
 
 | Plan with purpose | Keep the context |
 | :--- | :--- |
-| **Tasks & steps** — priorities, categories, due dates and completion tracking. | **Meetings & maps** — agendas, online links and geocoded venues with Leaflet. |
-| **Calendar** — monthly task and meeting views with detail panels. | **Project invitations** — create projects, find teammates by connection code and accept or decline invites. |
-| **Progress at a glance** — task counts, completion rings and category breakdowns. | **Personal touches** — theme switching, interactive 3D and an in-app notification inbox. |
+| **Tasks & steps** — priorities, categories, due dates and completion. | **Meetings & maps** — agendas, online links and mapped venues. |
+| **Calendar** — monthly tasks and meetings with detail panels. | **Project invitations** — find teammates by code; accept or decline invites. |
+| **Visible progress** — completion rings and category totals. | **Personal touches** — theme switching, interactive 3D and a notification inbox. |
 
 ## Built with
 
@@ -63,16 +63,19 @@ Search and filter your tasks, check off a step and follow completion by category
 ### One workspace, three layers
 
 ```mermaid
+%%{init: {"flowchart": {"rankSpacing": 24, "padding": 12}, "themeVariables": {"fontSize": "20px"}}}%%
 flowchart LR
-  UI["React + Vite"] <-->|"/api · JSON / FormData"| API["Flask + session cookies"]
+  UI["React"] <-->|"/api"| API["Flask"]
   API <-->|"SQL"| DB[(MySQL)]
+  classDef layer fill:#1a223d,stroke:#8576cc,color:#eef0ff
+  class UI,API,DB layer
 ```
 
-[React hooks](src/hooks) manage fetching and derived dashboard state through a [shared API helper](src/api.js). [Flask routes](backend.py) handle tasks, meetings and notifications; the [user blueprint](user.py) handles accounts, profiles and project invitations. [One connection module](db.py) supplies MySQL access. During development, [Vite](vite.config.js) proxies `/api` and `/static` to Flask.
+[React hooks](src/hooks) use a [shared fetch helper](src/api.js) with session cookies. [Flask routes](backend.py) cover tasks, meetings and notifications; the [user blueprint](user.py) covers accounts, profiles and project invitations. [db.py](db.py) centralizes MySQL connections. During development, [Vite](vite.config.js) forwards `/api` and `/static` to Flask.
 
 ## Run locally
 
-**Prerequisites:** Node.js 22.12+ (or 20.19+), Python 3 and MySQL.
+**Prerequisites:** Node.js 22.12+, Python 3 and MySQL.
 
 **Database required:** This repository does not include schema SQL or a database bootstrap script. Obtain a compatible `todolist` schema from the maintainer before running the full application.
 
@@ -122,6 +125,8 @@ npm run dev
 ```
 
 Open **http://localhost:5173/auth**. Flask listens on **http://localhost:5000**. `npm run build` builds the frontend; Flask does not currently serve that build.
+
+On case-sensitive filesystems, match the `WelcomePopup` import in [LoginRegister.jsx](src/Pages/LoginRegister.jsx) to the existing filename, `Welcomepopup.jsx`.
 
 This is a development project: Flask uses debug mode and a placeholder session secret, and the Google flow still needs server-side credential verification before deployment.
 
